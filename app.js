@@ -41,7 +41,7 @@ searchForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const formData = new FormData(searchForm);
     // Slice C: Call findCountries with continent from formData
-    findCountries
+    findCountries(formData.get('continent'));
 });
 
 /* Display Functions */
